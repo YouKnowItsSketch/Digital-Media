@@ -1,0 +1,137 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid{
+  height:100%;
+  display:table;
+  width: 100%;
+  padding: 0;
+}
+ 
+.row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
+ 
+.centering {
+  float:none;
+  margin:0 auto;
+}
+
+.image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/3jPYgeVCTWCMqjtb7Dqi_IMG_8251.jpg);
+    background-size: cover;
+    color: #fff;
+}
+
+.nav-inner {
+    background-color: rgba(235, 235, 235, 0.7);
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin-top; -45px;
+    z-index: 1; 
+}
+
+.nav {
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+.nav li {
+    display:inline;
+}
+
+.nav a {
+    display:inline-block !important;
+    padding:10px;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.content {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 668px;
+}
+
+.gallery {
+    min-height: 600px;
+}
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.arrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/arrow.svg);
+  background-size: contain;
+}
+
+.bounce {
+  -moz-animation: bounce 2s 2;
+  -webkit-animation: bounce 2s 2;
+  animation: bounce 2s 2;
+}
